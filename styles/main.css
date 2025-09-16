@@ -1,0 +1,25 @@
+:root {
+    --color-primary: #27254C;
+    --color-secondary: #564A94;
+    --color-accent: #45B0D2;
+    --color-light: #F2ECF8;
+    --color-gray: #9B9AB4;
+    --color-dark: #1F232F;
+
+    --font-title: 'Bebas Neue', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-body: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-dark);
+    background-color: var(--color-light);
+    line-height: 1.6;
+}

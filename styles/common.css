@@ -24,10 +24,11 @@ html {
 }
 
 body {
-    font-family: var(--font-body);
+    font-family: var(--font-alt);
     background-color: var(--bg-principal);
     color: var(--texto-principal);
     line-height: 1.6;
+    margin-top: 25px;
 }
 
 main {

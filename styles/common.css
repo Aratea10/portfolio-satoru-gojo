@@ -30,6 +30,10 @@ body {
     line-height: 1.6;
 }
 
+main {
+    padding-top: 130px;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;

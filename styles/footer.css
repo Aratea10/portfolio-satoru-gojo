@@ -1,22 +1,27 @@
 .main-footer {
     text-align: center;
-    padding: 2rem;
+    padding: 0.5rem 2rem;
     background-color: var(--fondo-tarjeta);
     color: var(--texto-principal);
     border-top: 2px solid var(--sombra-tarjeta);
     font-family: var(--font-ui);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
 }
 
 .social-links {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
 }
 
 .social-links a {
     color: var(--texto-principal);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: color 0.3s ease, transform 0.3 ease;
 }
 

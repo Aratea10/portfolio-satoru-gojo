@@ -1,31 +1,33 @@
 .banner {
-    background: relative;
-    width: 100%;
+    background-image: url('../img/fondo-mobile.png');
+    background-size: cover;
+    background-position: center;
     height: 100vh;
-    overflow: hidden;
+    position: relative;
     display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.banner-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    top: 0;
-    left: 0;
-    z-index: 1;
 }
 
 .banner::after {
     content: '';
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(41, 48, 70, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .banner-content {
     position: relative;
-    z-index: 3;
+    z-index: 2;
     text-align: center;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .banner {
+        background-image: url('../img/fondo-desktop.png');
+    }
 }

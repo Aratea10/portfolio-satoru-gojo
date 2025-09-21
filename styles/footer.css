@@ -1,9 +1,10 @@
 .main-footer {
     text-align: center;
+    padding: 2rem;
     background-color: var(--fondo-tarjeta);
     color: var(--texto-principal);
     border-top: 2px solid var(--sombra-tarjeta);
-    font-family: var(--font-alt);
+    font-family: var(--font-ui);
 }
 
 .social-links {
@@ -22,4 +23,17 @@
 .social-links a:hover {
     color: var(--detalles);
     transform: scale(1.2);
+}
+
+@media (min-width: 768px) {
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social-links  {
+        margin-top: 0;
+        gap: 1.5rem;
+    }
 }

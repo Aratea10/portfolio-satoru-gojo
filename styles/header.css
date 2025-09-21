@@ -14,7 +14,7 @@
 }
 
 .logo-img {
-  height: 125px;
+  height: 80px;
   width: auto;
   border-radius: 5px;
 }
@@ -65,12 +65,11 @@
 }
 
 .nav-links a {
-  font-family: var(--font-alt);
+  font-family: var(--font-ui);
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 0.3rem;
-  color: var(--texto-principal);
 }
 
 .nav-links a::after {
@@ -113,7 +112,7 @@
     }
 
     .logo-img {
-        height: 120px;
+        height: 90px;
     }
     .burger-menu-label {
         display: none;
@@ -149,6 +148,7 @@
         flex-direction: row;
         gap: 2rem;
         align-items: center;
+        padding: 0;
     }
 
     .nav-links a {

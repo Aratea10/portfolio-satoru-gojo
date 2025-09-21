@@ -231,17 +231,22 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
-    .contact-form {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          column-gap: 2rem;
-          row-gap: 1rem;
-      }
+    .contact-form h2 {
+      text-align: center;
+    }
 
-    .form-group-full {
-          grid-column: 1;
-      }
+    .form-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
 
+    .form-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
 }
 
 @media (min-width: 1024px) {

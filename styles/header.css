@@ -136,6 +136,7 @@
         box-shadow: none;
         padding-bottom: 0;
         overflow: visible;
+        opacity: 1;
     }
 
     #burger-toggle:checked ~ .main-nav {

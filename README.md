@@ -104,16 +104,16 @@ portfolio-satoru-gojo/
 ## 🎓 Aprendizajes y Desafíos
 
 ### 💡 Conceptos técnicos dominados
-- **Arquitectura CSS escalable** -
-- **Animaciones con @keyframes** -
-- **Diseño responsive avanzado** -
-- **Validación nativa de formularios** -
+- **Arquitectura CSS escalable** - Organización por componentes
+- **Animaciones con @keyframes** - Barras de progreso animadas
+- **Diseño responsive avanzado** - Media queries estratégicas
+- **Validación nativa de formularios** - Patrones regex y atributos HTML5
   
 ### 🚧 Desafíos superados
-- **Menú burger con CSS puro** -
-- **Compatibilidad entre navegadores** -
-- **Optimización de imágenes** - 
-- **Mantenibilidad del código** -
+- **Menú burger con CSS puro** - Sin JavaScript usando checkbox
+- **Compatibilidad entre navegadores** - Testing en Chrome, Firefox, Edge, Safari
+- **Optimización de imágenes** - Diferentes assets para móvil/desktop
+- **Mantenibilidad del código** - Variables CSS y estructura clara
 
 ## 🤝 Guía de Contribución
 ¿Tienes ideas para mejorar este portfolio? ¡Las contribuciones son bienvenidas!

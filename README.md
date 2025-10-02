@@ -87,7 +87,7 @@ portfolio-satoru-gojo/
 │   ├── 🎨 banner.css
 │   ├── 🎨 components.css
 │   ├── 🎨 error.css
-│   ├── 🎨 video.css
+│   └── 🎨 video.css
 ├── 📁 img/
 │   ├── 🖼️ fondo-desktop.png
 │   ├── 🖼️ fondo-mobile.png

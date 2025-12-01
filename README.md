@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS&logoColor=white)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/multipage/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS&logoColor=white)](https://www.w3.org/Style/CSS/)
 ![Mobile First](https://img.shields.io/badge/Mobile_First-FF6B6B?style=for-the-badge)
 ![Responsive](https://img.shields.io/badge/Responsive-4ECDC4?style=for-the-badge)
 

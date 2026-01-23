@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Montserrat:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        xintegrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/common.css" />
     <link rel="stylesheet" href="styles/header.css" />
@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="styles/video.css" />
 </head>
 
-<body>
+<body class="layout-fullscreen">
     <header class="main-header">
         <a href="index.html" class="logo">
             <img src="img/logo-header.png" alt="Logo de Satoru Gojō" class="logo-img" />
@@ -36,20 +36,28 @@
                 <li><a href="index.html#about">Sobre mí</a></li>
                 <li><a href="index.html#skills">Habilidades</a></li>
                 <li><a href="proyectos.html">Proyectos</a></li>
-                <li><a href="video.html">Video</a></li>
+                <li><a href="video.html">Vídeo</a></li>
                 <li><a href="index.html#contact">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main class="video-page">
-        <section class="video-section container">
-            <h1>Mi técnica más Poderosa</h1>
-            <p>La sentencia del Vacío Infinito | 無量空処</p>
+        <section class="video-section">
+            <div class="container">
+                <h1>Mi técnica más Poderosa</h1>
+                <p>La sentencia del Vacío Infinito | 無量空処</p>
+            </div>
             <div class="video-container">
-                <video class="fade-in-video" autoplay muted loop playsinline tittle="Gojo uses his domain expansion">
-                    <source src="video/gojo-domain-expansion.mp4" type="video/mp4" />
-                    Tu navegador no soporta el vídeo. Por favor, actualiza el navegador.
-                </video>
+                <div class="video-wrapper-for-ratio">
+                    <video autoplay muted loop playsinline controls title="Gojo uses his domain expansion">
+                        <source src="video/gojo-domain-expansion.mp4" type="video/mp4" />
+                        <p>
+                            El hechizo de vídeo de tu navegador es demasiado débil para
+                            mostrar la expansión de dominio. Intenta lanzar una versión más
+                            reciente.
+                        </p>
+                    </video>
+                </div>
             </div>
         </section>
     </main>

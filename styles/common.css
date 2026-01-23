@@ -57,27 +57,12 @@ a:hover {
 }
 
 section[id] {
-    scroll-margin-top: 150px;
+    scroll-margin-top: 120px;
 }
 
 @media (min-width: 768px) {
     .projects-grid {
         grid-template-columns: repeat(2, 1fr);
-    }
-
-    .contact-form {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem 2rem;
-        grid-template-areas:
-            "header     header"
-            "nombre     conociste"
-            "apellidos  conociste"
-            "telefono   conociste"
-            "github     conociste"
-            "mensaje    mensaje"
-            "newsletter newsletter"
-            "actions    actions";
     }
 
     .form-header {
@@ -108,7 +93,21 @@ section[id] {
         grid-area: actions;
     }
 
+    .form-mensaje {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .form-mensaje textarea {
         min-height: 120px;
+    }
+
+    body {
+        padding-bottom: 100px;
+    }
+
+    section[id] {
+        scroll-margin-top: 90px;
     }
 }

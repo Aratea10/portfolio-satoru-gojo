@@ -34,7 +34,7 @@ main.video-page {
     border: 1px solid var(--sombra-tarjeta);
 }
 
-.video-container iframe {
+.video-container video {
     position: absolute;
     top: 0;
     left: 0;

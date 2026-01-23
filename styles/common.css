@@ -1,6 +1,4 @@
 :root {
-    --header-height: 150px;
-    --footer-height: 100px;
     --bg-principal: #1f232f;
     --texto-principal: #f2ecf8;
     --texto-secundario: #b0b5c1;
@@ -30,6 +28,9 @@ body {
     background-color: var(--bg-principal);
     color: var(--texto-principal);
     line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
@@ -45,7 +46,9 @@ main {
 a {
     color: var(--texto-principal);
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
 }
 
 a:hover {
@@ -53,8 +56,59 @@ a:hover {
     text-shadow: 0 0 5px var(--detalles);
 }
 
+section[id] {
+    scroll-margin-top: 150px;
+}
+
 @media (min-width: 768px) {
-    body {
-        font-size: 17px;
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem 2rem;
+        grid-template-areas:
+            "header     header"
+            "nombre     conociste"
+            "apellidos  conociste"
+            "telefono   conociste"
+            "github     conociste"
+            "mensaje    mensaje"
+            "newsletter newsletter"
+            "actions    actions";
+    }
+
+    .form-header {
+        grid-area: header;
+    }
+    .form-nombre {
+        grid-area: nombre;
+    }
+    .form-apellidos {
+        grid-area: apellidos;
+    }
+    .form-telefono {
+        grid-area: telefono;
+    }
+    .form-github {
+        grid-area: github;
+    }
+    .form-conociste {
+        grid-area: conociste;
+    }
+    .form-mensaje {
+        grid-area: mensaje;
+    }
+    .form-newsletter {
+        grid-area: newsletter;
+    }
+    .form-actions {
+        grid-area: actions;
+    }
+
+    .form-mensaje textarea {
+        min-height: 120px;
     }
 }

@@ -44,9 +44,7 @@
     </header>
     <main>
         <section class="banner">
-            <div class="banner-content">
-
-            </div>
+            <div class="banner-content"></div>
         </section>
         <section id="about" class="about-me container">
             <h2>Sobre mí</h2>
@@ -57,7 +55,7 @@
                 enseñar a una nueva generación de hechiceros que sean lo suficientemente fuertes para un mundo sin mí.
             </p>
         </section>
-        <section id="skills-section" class="skills container">
+        <section id="skills" class="skills container">
             <h2>Habilidades</h2>
             <div class="skills-grid">
                 <div class="skill-bar">
@@ -89,49 +87,55 @@
         <section id="contact" class="container">
             <form action="#" method="post" class="contact-form">
                 <h2>Contacto</h2>
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required />
-                </div>
-                <div class="form-group">
-                    <label for="apellidos">Apellidos</label>
-                    <input type="text" id="apellidos" name="apellidos" required />
-                </div>
-                <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" required />
-                </div>
-                <div class="form-group">
-                    <label for="github-tag">Tag de GitHub (@username)</label>
-                    <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+" />
-                </div>
-                <div class="form-group form-group-full">
-                    <label>¿Cómo me conociste?</label>
-                    <div class="radio-group">
-                        <div class="radio-option">
-                            <input type="radio" id="universidad" name="conociste" value="universidad" required />
-                            <label for="universidad">Universidad</label>
+                <div class="form-columns">
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" required>
                         </div>
-                        <div class="radio-option">
-                            <input type="radio" id="kickoff" name="conociste" value="kickoff" required />
-                            <label for="kickoff">KeepCoding Kickoff</label>
+                        <div class="form-group">
+                            <label for="apellidos">Apellidos</label>
+                            <input type="text" id="apellidos" name="apellidos" required>
                         </div>
-                        <div class="radio-option">
-                            <input type="radio" id="colegio" name="conociste" value="colegio" required />
-                            <label for="colegio">Colegio</label>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" required>
                         </div>
-                        <div class="radio-option">
-                            <input type="radio" id="github" name="conociste" value="github" required />
-                            <label for="github">GitHub</label>
+                        <div class="form-group">
+                            <label for="github-tag">Tag de GitHub (@username)</label>
+                            <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+">
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <div class="form-group">
+                            <label>¿Cómo me conociste?</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="universidad" name="conociste" value="universidad" required>
+                                    <label for="universidad">Universidad</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="kickoff" name="conociste" value="kickoff" required>
+                                    <label for="kickoff">KeepCoding Kickoff</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="colegio" name="conociste" value="colegio" required>
+                                    <label for="colegio">Colegio</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="github" name="conociste" value="github" required>
+                                    <label for="github">GitHub</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="form-group form-group-full">
+                <div class="form-group">
                     <label for="mensaje">Mensaje (máx. 180 caracteres)</label>
-                    <textarea id="mensaje" name="mensaje" maxlength="180" rows="4" required></textarea>
+                    <textarea id="mensaje" name="mensaje" maxlength="180" rows="5" required></textarea>
                 </div>
-                <div class="checkbox-group form-group-full">
-                    <input type="checkbox" id="newsletter" name="newsletter" />
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" name="newsletter">
                     <label for="newsletter">Acceso a la newsletter</label>
                 </div>
                 <div class="form-actions">

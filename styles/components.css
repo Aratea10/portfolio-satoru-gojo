@@ -131,8 +131,7 @@
     gap: 1rem;
 }
 
-.submit-btn,
-.reset-btn {
+.submit-btn, .reset-btn {
     font-family: var(--font-ui);
     font-size: 1rem;
     font-weight: 700;
@@ -176,14 +175,21 @@
     margin-top: 2rem;
 }
 
+#projects h2 {
+    font-family: var(--font-header);
+    color: var(--resaltado);
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
 .project-card {
     background-color: var(--fondo-tarjeta);
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
     overflow: hidden;
-    transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
 }
 
@@ -199,7 +205,7 @@
 }
 
 .project-info {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .project-info h3 {
@@ -207,13 +213,13 @@
     color: var(--detalles);
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+    font-size: 1.2rem;
 }
 
 .project-info p {
     font-family: var(--font-body);
     color: var(--texto-principal);
-    font-size: 1rem;
-    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
 }
 
 .fade-in-video {
@@ -271,11 +277,42 @@
         color: var(--texto-principal);
         font-size: 0.9rem;
     }
+
+    .project-info p {
+        position: relative;
+        max-height: 4.5em;
+        overflow: hidden;
+        transition: max-height 0.5s ease-out;
+    }
+
+    .project-info p::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2em;
+        background: linear-gradient(to top, var(--fondo-tarjeta) 0%, transparent 100%);
+        pointer-events: none;
+        transition: opacity 0.5s ease-out;
+    }
+
+    .project-card:hover .project-info p {
+        max-height: 20em
+    }
+
+    .project-card:hover .project-info p::after {
+        opacity: 0;
+    }
 }
 
 @media (min-width: 1024px) {
     .projects-grid {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projects-grid .project-card:nth-child(4) {
+        grid-column: 2;
     }
 }
 
@@ -289,5 +326,11 @@
         font-weight: 600;
         color: var(--texto-principal);
         font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .projects-page-main {
+        padding-bottom: 20px;
     }
 }

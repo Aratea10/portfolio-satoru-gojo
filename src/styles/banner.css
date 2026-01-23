@@ -1,6 +1,7 @@
 .banner {
-    --banner-image: url("../img/fondo-mobile.png");
-    background-image: linear-gradient(to bottom, transparent 70%, var(--bg-principal) 100%),
+    --banner-image: url("/src/assets/img/fondo-mobile.png");
+    background-image:
+    linear-gradient(to bottom, transparent 70%, var(--bg-principal) 100%),
     var(--banner-image);
     background-size: cover;
     background-position: center;
@@ -19,6 +20,6 @@
 
 @media (min-width: 768px) {
     .banner {
-        --banner-image: url("../img/fondo-desktop.png");
+        --banner-image: url("/src/assets/img/fondo-desktop.png");
     }
 }

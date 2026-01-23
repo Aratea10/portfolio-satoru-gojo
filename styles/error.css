@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 80vh;
+    height: calc(100vh - 104px - 76px);
 }
 
 .error-container h1 {
@@ -15,7 +15,7 @@
 
 .error-container p {
     font-family: var(--font-ui);
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: var(--texto-secundario);
     margin-bottom: 2rem;
 }
@@ -35,6 +35,11 @@
     box-shadow: 0 0 10px var(--detalles);
 }
 
+body.error-404-page .error-container h1.error-code {
+    color: var(--resaltado);
+    text-shadow: 0 0 15px var(--resaltado);
+}
+
 @media (min-width: 768px) {
     .error-container h1 {
         font-size: 10rem;
@@ -42,5 +47,9 @@
 
     .error-container p {
         font-size: 1.5rem;
+    }
+
+    .error-page {
+        height: calc(100vh - 90px - 66px);
     }
 }

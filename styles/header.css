@@ -117,10 +117,6 @@
         display: none;
     }
 
-    #burger-toggle {
-        display: none;
-    }
-
     .main-header {
         flex-direction: row;
         justify-content: space-between;
@@ -139,11 +135,6 @@
         opacity: 1;
     }
 
-    #burger-toggle:checked ~ .main-nav {
-        max-height: none;
-        padding-bottom: 0;
-    }
-
     .nav-links {
         flex-direction: row;
         gap: 2rem;
@@ -158,5 +149,9 @@
     .nav-links a:hover {
         color: var(--detalles);
         text-shadow: 0 0 8px var(--detalles);
+    }
+
+    .nav-links a::after {
+        content: none;
     }
 }

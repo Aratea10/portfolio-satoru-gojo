@@ -42,7 +42,6 @@
     position: absolute;
     top: 100%;
     left: 0;
-    display: flex;
     background-color: var(--sombra-tarjeta);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
@@ -137,6 +136,7 @@
         box-shadow: none;
         padding-bottom: 0;
         overflow: visible;
+        opacity: 1;
     }
 
     #burger-toggle:checked ~ .main-nav {

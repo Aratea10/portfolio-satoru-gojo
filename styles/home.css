@@ -56,9 +56,7 @@
     width: 0;
     border-radius: 6px;
     animation: fillBar 2s ease-out 0.5s forwards;
-    box-shadow:
-        0 0 10px var(--resaltado),
-        0 0 5px var(--detalles);
+    box-shadow: 0 0 10px var(--resaltado), 0 0 5px var(--detalles);
 }
 
 @keyframes fillBar {
@@ -78,5 +76,12 @@
     .skills-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .index-page-main {
+        padding-bottom: 20px;
     }
 }

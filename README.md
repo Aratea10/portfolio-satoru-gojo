@@ -2,8 +2,8 @@
 
 <div align="center">
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS&logoColor=white)
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://html.spec.whatwg.org/multipage/)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=CSS&logoColor=white)](https://www.w3.org/Style/CSS/)
 ![Mobile First](https://img.shields.io/badge/Mobile_First-FF6B6B?style=for-the-badge)
 ![Responsive](https://img.shields.io/badge/Responsive-4ECDC4?style=for-the-badge)
 
@@ -87,7 +87,7 @@ portfolio-satoru-gojo/
 │   ├── 🎨 banner.css
 │   ├── 🎨 components.css
 │   ├── 🎨 error.css
-│   ├── 🎨 video.css
+│   └── 🎨 video.css
 ├── 📁 img/
 │   ├── 🖼️ fondo-desktop.png
 │   ├── 🖼️ fondo-mobile.png
@@ -104,16 +104,16 @@ portfolio-satoru-gojo/
 ## 🎓 Aprendizajes y Desafíos
 
 ### 💡 Conceptos técnicos dominados
-- **Arquitectura CSS escalable** -
-- **Animaciones con @keyframes** -
-- **Diseño responsive avanzado** -
-- **Validación nativa de formularios** -
+- **Arquitectura CSS escalable** - Organización por componentes
+- **Animaciones con @keyframes** - Barras de progreso animadas
+- **Diseño responsive avanzado** - Media queries estratégicas
+- **Validación nativa de formularios** - Patrones regex y atributos HTML5
   
 ### 🚧 Desafíos superados
-- **Menú burger con CSS puro** -
-- **Compatibilidad entre navegadores** -
-- **Optimización de imágenes** - 
-- **Mantenibilidad del código** -
+- **Menú burger con CSS puro** - Sin JavaScript usando checkbox
+- **Compatibilidad entre navegadores** - Testing en Chrome, Firefox, Edge, Safari
+- **Optimización de imágenes** - Diferentes assets para móvil/desktop
+- **Mantenibilidad del código** - Variables CSS y estructura clara
 
 ## 🤝 Guía de Contribución
 ¿Tienes ideas para mejorar este portfolio? ¡Las contribuciones son bienvenidas!

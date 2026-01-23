@@ -1,14 +1,163 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Satoru Gojō - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Montserrar:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        xintegrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/common.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/banner.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/components.css">
 </head>
 
 <body>
-
+    <header class="main-header">
+        <a href="index.html" class="logo">
+            <img src="img/logo-header.png" alt="Logo de Satoru Gojō">
+        </a>
+        <label for="burger-toggle" class="burger-menu-label">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <input type="checkbox" id="burger-toggle">
+        <nav class="main-nav-mobile">
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="projects.html">Proyectos</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1></h1>
+                <p></p>
+            </div>
+        </section>
+        <section id="about" class="about-me container">
+            <h2></h2>
+            <p class="description">
+                Mi nombre es Satoru Gojō. Soy un hechicero de grado especial y profesor en el Colegio Técnico de Magia
+                Metropolitana de Tokio. Como miembro del clan Gojō y poseedor de las técnicas hereditarias de "Infinito"
+                y "Seis Ojos", soy considerado el hechicero de Jujutsu más poderoso de la era moderna. Mi objetivo es
+                enseñar a una nueva generación de hechiceros que sean lo suficientemente fuertes para un mundo sin mí.
+            </p>
+        </section>
+        <section id="skills-section" class="skills container">
+            <h2>Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-bar">
+                    <h3>Seis Ojos | 六眼</h3>
+                    <div class="skill-bar-inner" style="--skill-level: 100%;"></div>
+                </div>
+                <div class="skill-bar">
+                    <h3>Infinito | 無限</h3>
+                    <div class="skill-bar-inner" style="--skill-level: 98%;"></div>
+                </div>
+                <div class="skill-bar">
+                    <h3>Vacío Púrpura | 紫</h3>
+                    <div class="skill-bar-inner" style="--skill-level: 100%;"></div>
+                </div>
+                <div class="skill-bar">
+                    <h3>Expansión de Dominio: Vacío Infinito | 無下限</h3>
+                    <div class="skill-bar-inner" style="--skill-level: %;"></div>
+                </div>
+                <div class="skill-bar">
+                    <h3>Rojo | 赤</h3>
+                    <div class="skill-bar-inner" style="--skill-level: %;"></div>
+                </div>
+                <div class="skill-bar">
+                    <h3>Azul | 青</h3>
+                    <div class="skill-bar-inner" style="--skill-level: %;"></div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contacto</h2>
+            <form action="#" method="post" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+                </div>
+                <div class="form-group">
+                    <label>¿Cómo me conociste?</label>
+                    <div class="radio-group">
+                        <div class="radio-option">
+                            <input type="radio" id="universidad" name="conociste" value="universidad" required>
+                            <label for="universidad">Universidad</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="kick-off" name="conociste" value="kick-off" required>
+                            <label for="kick-off">KeepCoding Kick-off</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="colegio" name="conociste" value="colegio" required>
+                            <label for="colegio">Colegio</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="github" name="conociste" value="github" required>
+                            <label for="github">GitHub</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="github-tag">Tag de GitHub (@username)</label>
+                        <input type="text" id="github-tag" name="github-tag" pattern="^@[^\s]+>">
+                    </div>
+                    <div class="for-group">m
+                        <label for="mensaje">Mensaje (máx. 180 caracteres)</label>
+                        <textarea id="mensaje" name="mensaje" maxlenght="180" rows="4" required></textarea>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Acceso a la newsletter"</label>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit" class="submit-btn">Guardar</button>
+                        <button type="reset" class="reset-btn">Resetear</button>
+                    </div>
+            </form>
+        </section>
+    </main>
+    <footer class="main-fotter">
+        <div class="social-links">
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

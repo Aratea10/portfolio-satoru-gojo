@@ -106,3 +106,57 @@
     max-height: 50vh;
     padding-bottom: 1.5rem;
 }
+
+@media (min-width: 768px) {
+    main {
+    padding-top: 125px;
+    }
+
+.logo-img {
+    height: 120px;
+    }
+
+.burger-menu-label {
+    display: none;
+    }
+
+#burger-toggle {
+    display: none;
+    }
+
+.main-header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0rem 3rem 0rem 1.5rem;
+    }
+
+.main-nav {
+    display: flex;
+    position: static;
+    max-height: none;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    padding-bottom: 0;
+    overflow: visible;
+    }
+
+#burger-toggle:checked ~ .main-nav {
+    max-height: none;
+    padding-bottom: 0;
+    }
+
+.nav-links {
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+    }
+
+.nav-links a {
+    transition: color 0.3s ease;
+    }
+
+.nav-links a:hover {
+    color: var(--detalles);
+    }
+}

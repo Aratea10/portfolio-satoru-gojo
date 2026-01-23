@@ -1,8 +1,8 @@
 .banner {
-    background-image: url('../img/fondo-mobile.png');
+    background-image: linear-gradient(to bottom, transparent 70%, var(--bg-principal) 100%), url('../img/fondo-mobile.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 100vh; /* Restauramos la altura al 100% de la pantalla */
     position: relative;
     display: flex;
     align-items: center;
@@ -16,7 +16,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    
 }
 
 .banner-content {
@@ -28,6 +28,6 @@
 
 @media (min-width: 768px) {
     .banner {
-        background-image: url('../img/fondo-desktop.png');
+        background-image: linear-gradient(to bottom, transparent 70%, var(--bg-principal) 100%),url('../img/fondo-desktop.png');
     }
 }

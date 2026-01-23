@@ -1,0 +1,108 @@
+.main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    gap: 0.5rem;
+    background-color: var(--bg-principal);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 6px var(--sombra-tarjeta);
+}
+
+.logo-img {
+    height: 100px;
+    width: auto;
+    border-radius: 5px;
+}
+
+#burger-toggle {
+    display: none;
+}
+
+.burger-menu-label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 1001;
+    padding-bottom: 10px;
+}
+
+.burger-menu-label .line {
+    width: 25px;
+    height: 3px;
+    background-color: var(--texto-principal);
+    transition: all 0.3s ease;
+}
+
+.main-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    background-color: var(--bg-principal);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 0 3px 6px var(--sombra-tarjeta);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    font-family: var(--font-alt);
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 0.3rem;
+    color: var(--texto-principal);
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: var(--detalles);
+    transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+    background: var(--detalles);
+}
+
+#burger-toggle:checked + .burger-menu-label .line:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+#burger-toggle:checked + .burger-menu-label .line:nth-child(2) {
+    opacity: 0;
+}
+
+#burger-toggle:checked + .burger-menu-label .line:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+#burger-toggle:checked ~ .main-nav {
+    max-height: 50vh;
+    padding-bottom: 1.5rem;
+}

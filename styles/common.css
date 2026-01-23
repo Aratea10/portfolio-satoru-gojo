@@ -28,13 +28,11 @@ body {
     background-color: var(--bg-principal);
     color: var(--texto-principal);
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 main {
-    flex-grow: 1;
+    padding-top: 150px;
+    padding-bottom: 80px;
 }
 
 .container {
@@ -46,7 +44,9 @@ main {
 a {
     color: var(--texto-principal);
     text-decoration: none;
-    transition: color 0.3s ease, text-shadow 0.3s ease;
+    transition:
+    color 0.3s ease,
+    text-shadow 0.3s ease;
 }
 
 a:hover {

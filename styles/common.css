@@ -61,48 +61,6 @@ section[id] {
 }
 
 @media (min-width: 768px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .form-header {
-        grid-area: header;
-    }
-    .form-nombre {
-        grid-area: nombre;
-    }
-    .form-apellidos {
-        grid-area: apellidos;
-    }
-    .form-telefono {
-        grid-area: telefono;
-    }
-    .form-github {
-        grid-area: github;
-    }
-    .form-conociste {
-        grid-area: conociste;
-    }
-    .form-mensaje {
-        grid-area: mensaje;
-    }
-    .form-newsletter {
-        grid-area: newsletter;
-    }
-    .form-actions {
-        grid-area: actions;
-    }
-
-    .form-mensaje {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .form-mensaje textarea {
-        min-height: 120px;
-    }
-
     body {
         padding-bottom: 100px;
     }

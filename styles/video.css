@@ -1,108 +1,122 @@
 .video-section {
-    text-align: center;
-    padding: 1rem;
+  text-align: center;
+  padding: 1rem;
 }
 
 .video-section h1 {
-    font-family: var(--font-header);
-    color: var(--detalles);
-    text-transform: uppercase;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
+  font-family: var(--font-header);
+  color: var(--detalles);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .video-section p {
-    font-family: var(--font-ui);
-    color: var(--texto-secundario);
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+  font-family: var(--font-ui);
+  color: var(--texto-secundario);
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
 }
 
 .video-wrapper-for-ratio {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px var(--sombra-tarjeta);
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px var(--sombra-tarjeta);
 }
 
 .video-wrapper-for-ratio video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
-    .video-container {
-        max-width: 85%;
-        margin: 0 auto;
-    }
+  .video-container {
+    max-width: 85%;
+    margin: 0 auto;
+  }
 }
 
 @media (min-width: 1024px) {
-    body.layout-fullscreen {
-        display: grid;
-        grid-template-rows: auto 1fr auto;
-        height: 100vh;
-        overflow: hidden;
-    }
+  body.layout-fullscreen {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    overflow: hidden;
+  }
 
-    body.layout-fullscreen main.video-page {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        overflow-y: auto;
-    }
+  body.layout-fullscreen main.video-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+  }
 
-    .layout-fullscreen .video-section {
-        padding: 0;
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-    }
+  .layout-fullscreen .video-section {
+    padding: 0;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
-    .layout-fullscreen .video-container {
-        flex-grow: 1;
-        min-height: 0;
-        margin: 1rem auto 1.5rem;
-        width: 100%;
-        max-width: 1100px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+  .layout-fullscreen .video-container {
+    flex-grow: 1;
+    min-height: 0;
+    margin: 1rem auto 1.5rem;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .layout-fullscreen .video-wrapper-for-ratio {
-        position: static;
-        padding-bottom: 0;
-        height: 100%;
-        box-shadow: none;
-        border-radius: 0;
-    }
+  .layout-fullscreen .video-wrapper-for-ratio {
+    position: static;
+    padding-bottom: 0;
+    height: 100%;
+    box-shadow: none;
+    border-radius: 0;
+  }
 
-    .layout-fullscreen .video-wrapper-for-ratio video {
-        position: static;
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        border-radius: 20px;
-        box-shadow: 0 0 35px var(--sombra-tarjeta);
-    }
+  .layout-fullscreen .video-wrapper-for-ratio video {
+    position: static;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 20px;
+    box-shadow: 0 0 35px var(--sombra-tarjeta);
+  }
 
-    .layout-fullscreen .video-section h1 {
-        font-size: 2.5rem;
-    }
+  .layout-fullscreen .video-section h1 {
+    font-size: 2.5rem;
+  }
 
-    .layout-fullscreen .video-section p {
-        font-size: 1rem;
-        margin-bottom: 0;
-    }
+  .layout-fullscreen .video-section p {
+    font-size: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.fade-in-video {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .video-info {
-    text-align: center;
-    margin-top: 1rem;
+  text-align: center;
+  margin-top: 1rem;
 }

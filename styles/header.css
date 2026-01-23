@@ -14,7 +14,7 @@
 }
 
 .logo-img {
-    height: 125px;
+    height: 80px;
     width: auto;
     border-radius: 5px;
 }
@@ -65,12 +65,11 @@
 }
 
 .nav-links a {
-    font-family: var(--font-alt);
+    font-family: var(--font-ui);
     font-weight: 700;
     text-transform: uppercase;
     position: relative;
     padding-bottom: 0.3rem;
-    color: var(--texto-principal);
 }
 
 .nav-links a::after {
@@ -112,50 +111,51 @@
         padding-top: 125px;
     }
 
-.logo-img {
-    height: 120px;
+    .logo-img {
+        height: 90px;
     }
-.burger-menu-label {
-    display: none;
-    }
-
-#burger-toggle {
-    display: none;
+    .burger-menu-label {
+        display: none;
     }
 
-.main-header {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0rem 3rem 0rem 1.5rem;
+    #burger-toggle {
+        display: none;
     }
 
-.main-nav {
-    display: flex;
-    position: static;
-    max-height: none;
-    width: auto;
-    background-color: transparent;
-    box-shadow: none;
-    padding-bottom: 0;
-    overflow: visible;
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0rem 3rem 0rem 1.5rem;
     }
 
-#burger-toggle:checked ~ .main-nav {
-    max-height: none;
-    padding-bottom: 0;
+    .main-nav {
+        display: flex;
+        position: static;
+        max-height: none;
+        width: auto;
+        background-color: transparent;
+        box-shadow: none;
+        padding-bottom: 0;
+        overflow: visible;
     }
 
-.nav-links {
-    flex-direction: row;
-    gap: 2rem;
-    align-items: center;
+    #burger-toggle:checked ~ .main-nav {
+        max-height: none;
+        padding-bottom: 0;
     }
 
-.nav-links a {
-    transition: color 0.3s ease;
+    .nav-links {
+        flex-direction: row;
+        gap: 2rem;
+        align-items: center;
+        padding: 0;
     }
 
-.nav-links a:hover {
-    color: var(--detalles);
+    .nav-links a {
+        transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+        color: var(--detalles);
     }
 }

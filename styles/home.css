@@ -1,0 +1,82 @@
+.about-me {
+    text-align: justify;
+}
+
+.about-me h2,
+.about-me h3 {
+    font-family: var(--font-header);
+    color: var(--detalles);
+    text-transform: uppercase;
+}
+
+.about-me p.description {
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--texto-principal);
+    padding: 0 1rem;
+    text-align: left;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills h2 {
+    font-family: var(--font-header);
+    color: var(--detalles);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.skill-bar {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.skill-bar h3 {
+    font-family: var(--font-ui);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-principal);
+    margin-bottom: 0.5rem;
+    text-align: left;
+    padding-left: 0.5rem;
+}
+
+.skill-bar-inner {
+    background: linear-gradient(90deg, var(--detalles), var(--resaltado));
+    height: 15px;
+    width: 0;
+    border-radius: 6px;
+    animation: fillBar 2s ease-out 0.5s forwards;
+    box-shadow:
+        0 0 10px var(--resaltado),
+        0 0 5px var(--detalles);
+}
+
+@keyframes fillBar {
+    from {
+        width: 0%;
+    }
+    to {
+        width: var(--skill-level);
+    }
+}
+
+@media (min-width: 768px) {
+    .about-me p.description {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+}

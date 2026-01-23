@@ -2,7 +2,7 @@
     background-image: url('../img/fondo-mobile.png');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    min-height: calc(100vh - var(--header-height) - var(--footer-height));
     position: relative;
     display: flex;
     align-items: center;

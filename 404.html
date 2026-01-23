@@ -4,11 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Satoru Gojō - Portfolio</title>
+    <title>Error 404 - No encontrado</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;700&family=Montserrat:wght@400;600&family=Roboto+Condensed:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        xintegrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="common.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="error.css">
 </head>
 
 <body>
-
+    <header class="main-header">
+        <a href="index.html" class="logo">
+            <img src="img/logo-header.png" alt="Logo de Satoru Gojō" class="logo-img">
+        </a>
+        <label for="burger-toggle" class="burger-menu-label">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+        <input type="checkbox" id="burger-toggle">
+        <nav class="main-nav">
+            <ul class="nav-links">
+                <li><a href="index.html#about">Sobre mí</a></li>
+                <li><a href="index.html#skills">Habilidades</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+    </header>
+    <main class="error-page">
+        <section class="error-container">
+            <h1 class="error-code">400</h1>
+            <p class="error-message">Esta página no pudo ser encontrada. Quizás una maldición se la llevó.</p>
+            <a href="index.html" class="home-link">Regresar a casa</a>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <p>&copy; 2025 Satoru Gojō. Todos los derechos reservados.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

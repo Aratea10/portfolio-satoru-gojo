@@ -1,0 +1,27 @@
+{
+  "name": "portfolio-gojo-satoru",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aratea10/portfolio-satoru-gojo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Aratea10/portfolio-satoru-gojo/issues"
+  },
+  "homepage": "https://github.com/Aratea10/portfolio-satoru-gojo#readme",
+  "devDependencies": {
+    "@types/node": "^25.0.10",
+    "parcel": "^2.16.3",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3"
+  }
+}

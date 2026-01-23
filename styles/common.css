@@ -1,0 +1,47 @@
+:root {
+    --bg-principal: #1F232F;
+    --texto-principal: #F2ECF8;
+    --detalles: #45B0D2;
+    --resaltado: #C425D9;
+    --fondo-tarjeta: #C42323;
+
+    --font-header: 'Kanit', sans-serif;
+    --font: 'Montserrat', sans-serif;
+    --font-alt: 'Roboto Condensed', sans-serif;
+
+    --fondo-tarjeta: #2D3240;
+    --sombra-tarjeta: rgba(0, 0, 0, 0.3);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-principal);
+    color: var(--texto-principal);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+a {
+    color: var(--texto-principal);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--detalles);
+}

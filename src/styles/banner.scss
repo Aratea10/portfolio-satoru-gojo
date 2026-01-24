@@ -1,8 +1,8 @@
 .banner {
     --banner-image: url("/src/assets/img/fondo-mobile.png");
     background-image:
-    linear-gradient(to bottom, transparent 70%, var(--bg-principal) 100%),
-    var(--banner-image);
+        linear-gradient(to bottom, transparent 70%, var(--bg-principal) 100%),
+        var(--banner-image);
     background-size: cover;
     background-position: center;
     height: 100vh;

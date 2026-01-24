@@ -48,6 +48,24 @@
     box-shadow: 0 0 10px var(--resaltado);
 }
 
+.contact-form.was-validated {
+
+    input:invalid,
+    textarea:invalid {
+        border-color: #ff4444;
+        background-color: rgba(255, 68, 68, 0.1);
+
+        animation: shake 0.3s ease-in-out;
+    }
+
+    input:valid,
+    textarea:valid {
+        border-color: #00C851;
+    }
+
+
+}
+
 .radio-group {
     display: flex;
     flex-direction: column;
@@ -84,7 +102,7 @@
     background-color: transparent;
 }
 
-.radio-option input[type="radio"]:checked + label::after {
+.radio-option input[type="radio"]:checked+label::after {
     content: "";
     position: absolute;
     left: 4px;
@@ -273,11 +291,9 @@
         left: 0;
         width: 100%;
         height: 2em;
-        background: linear-gradient(
-            to top,
-            var(--fondo-tarjeta) 0%,
-            transparent 100%
-        );
+        background: linear-gradient(to top,
+                var(--fondo-tarjeta) 0%,
+                transparent 100%);
         pointer-events: none;
         transition: opacity 0.5s ease-out;
     }
@@ -308,5 +324,21 @@
 
     .projects-grid .project-card:nth-child(4) {
         grid-column: 2;
+    }
+}
+
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    75% {
+        transform: translateX(5px);
     }
 }

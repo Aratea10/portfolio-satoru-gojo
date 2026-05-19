@@ -105,7 +105,24 @@
       </section>
       <section id="contacto" aria-labelledby="contacto-title">
         <h2 id="contacto-title">Contacto</h2>
-        <form action="#" method="post"></form>
+        <form action="#" method="post">
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+          </div>
+          <div>
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+          </div>
+          <div>
+            <label for="github">Tag de GitHub</label>
+            <input type="text" id="github" name="github" placeholder="@username" pattern="^@[A-Za-z0-9-]+$">
+          </div>
+        </form>
       </section>
     </main>
     <footer>

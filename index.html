@@ -116,7 +116,8 @@
           </div>
           <div>
             <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" required>
+            <input type="tel" id="telefono" name="telefono" inputmode="numeric" pattern="[0-9]{9}" maxlength="9"
+              title="El teléfono debe tener 9 números" required>
           </div>
           <div>
             <label for="github">Tag de GitHub</label>
